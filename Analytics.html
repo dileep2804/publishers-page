@@ -1,10 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet"type="text/css"href="calender.css"media="all">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -22,48 +24,56 @@
   </script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <title>Main Page</title>
+  <title>My Plan</title>
 </head>
 
-<body style="background: #e4e1e1; ">
-  <!--Navigation Bar-->
-  <nav class="navbar " style="color: white;  background-color: #807EFC; margin-bottom: 0;">
-    <div class=" container-fluid">
-      <ul class="nav navbar-nav pull-sm-left">
-        <li class="nav-item">
-        <li class="nav-item">
-          <h4><a class="nav-link " style="color:white" href="#">YourBiz</a> </h4>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav w-50 navbar-logo mx-auto">
-        <li class="nav-item">
-          <div class="input-group rounded">
-            <input type="search" class="form-control rounded-pill " placeholder="Search" aria-label="Search"
-              aria-describedby="search-addon" />
-          </div>
-        </li>
-      </ul>
-      <ul class="nav topnav-right">
-        <li class="nav-item">
-          <a class="nav-link active" style="color:white" href="#"> <i class="fas fa-bell"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" style="color:white"><i class="fas fa-user-circle "></i></a>
-        </li>
-        <li class="nav-item">
-          <h4><a class="nav-link " style="color:white" href="#">Karan</a> </h4>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!--SideNav bar-->
+<body>
+  <!--Navigation Bar
+<nav class="navbar" style="color: white; background-color: #807EFC;">
+  <div class=" container-fluid">
+    <ul class="nav navbar-nav pull-sm-left">
+      <li class="nav-item">
+      <li class="nav-item">
+        <h4><a class="nav-link " style="color:white" href="#">YourBiz</a> </h4>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav w-50 navbar-logo mx-auto">
+      <li class="nav-item">
+        <div class="input-group rounded">
+          <input type="search" class="form-control rounded-pill " placeholder="Search" aria-label="Search"
+            aria-describedby="search-addon" />
+        </div>
+      </li>
+    </ul>
+    <ul class="nav topnav-right">
+      <li class="nav-item">
+        <a class="nav-link active" style="color:white" href="#"> <i class="fas fa-bell"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color:white"><i class="fas fa-user-circle "></i></a>
+      </li>
+      <li class="nav-item">
+        <h4><a class="nav-link " style="color:white" href="#">Karan</a> </h4>
+      </li>
+    </ul>
+  </div>
+</nav>
+-->
+
+  <!--Side Nav bar-->
   <div class="container-fluid">
-    <div class="row min-vh-100 flex-column flex-md-row " style="background-color:#FDF9F9 ;">
-      <aside class=" col-12 col-md-2 border-right shadow  flex-shrink-1">
+    <div class="row min-vh-100 flex-column flex-md-row ">
+      <aside class=" col-12 col-md-2 border-right shadow  flex-shrink-1" style="background-color:#F3F4FF ;">
         <nav class="navbar">
-          <ul class="navbar-nav ">
-            <li class="nav-item">
+          <ul class="navbar-nav">
+          <li class="nav-item">
               <a class="nav-link pl-0 text-nowrap" href="index.html">
+                <h2 class="text" style="color: #4A46FF; font-family: Montserrat;
+                  font-style: normal;font-weight: bold;font-size: 30px;">AdDekho</h2>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pl-0 text-nowrap" href="Analytics.html">
                 <h4 class="text-dark">Analytics</h4>
               </a>
             </li>
@@ -75,7 +85,7 @@
             <li class="nav-item">
               <a class="nav-link pl-0" href="clients.html">
 
-                <h4 class="text-dark"> Payment Page</h4>
+                <h4 class="text-dark"> Payment page</h4>
               </a>
             </li>
             <li class="nav-item">
@@ -85,157 +95,160 @@
             </li>
           </ul>
         </nav>
-        
+        <br>
       </aside>
-      <main class="col bg-faded py-3 flex-grow-1">
-        <div class="container-fluid" style="padding:30 ; background: #FDF9F9;">
-          <!--Calander-->
-          <br><br>
-          <div class="container">
-            <div class="d-flex row-row-reverse">
-              <div class="col-8"></div>
-              <div class="col-xl-4 justify-content-end">
-                <section class="col-sm-12">
-                  <div class="form-group">
-                    <div class='input-group date' id='datetimepicker1'>
-                      <input type='text' class="form-control" />
-                      <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                      </span>
-                    </div>
-                  </div>
-                </section>
-                <script type="text/javascript">
-                  $(function () {
-                    $('#datetimepicker1').datetimepicker();
-                  });
+      <!--Side Section main content-->
+    <main class="col bg-faded py-3 flex-grow-1" style=" background: rgba(61, 66, 218, 0.25)">
+        <nav class="navbar shadow-lg" style="color: black; background-color: rgb(255, 255, 255);">
+          <div class=" container-fluid ">
+            <ul class="nav navbar-nav w-50 pull-left">
+              <li class="nav-item">
+                <div class="input-group rounded">
+                  <input type="search" class="form-control rounded-pill " placeholder="Search" aria-label="Search"
+                    aria-describedby="search-addon" />
+                </div>
+              </li>
+            </ul>
+
+            <ul class="nav topnav-right">
+              <li class="nav-item">
+                <a class="nav-link active" style="color:black" href="#"> <i class="fas fa-bell"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color:black"><i class="fas fa-user-circle "></i></a>
+              </li>
+              <li class="nav-item">
+                <h4><a class="nav-link " style="color:black" href="#">Karan</a> </h4>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    
+
+<!--Image thing-->
+
+<div class="col-md-6">
+  <img src="Ladyy.jpg" alt="deleted"style="width:100%;height:auto;">
+</div>
+<!--Calander-->
+
+<div class="container" >
+  <div class="d-flex row-row-reverse">
+    <div class="col-4"></div>
+    <div class="col-xl-9 justify-content-end">
+      <section class="col-sm-12">
+        <div class="form-group">
+          <div class='input-group date' id='datetimepicker1'>
+            <input type='text' class="form-control" />
+            <span class="input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+          </div>
+        </div>
+      </section>
+      <script type="text/javascript">
+        $(function () {
+          $('#datetimepicker1').datetimepicker();
+        });
+      </script>
+    </div>
+  </div>
+</div>
+<!-- traffin an no. of days & Return on investment-->
+<br><br>
+<div class="container">
+  <div class="row">
+     <div class="col-md-4 mr-5" style="background-color: white;">
+          <div class="row">
+            <div class="col shadow rounded" style="color: white; background-color: #807EFC;">
+              <h3>traffic</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div>
+                <canvas id="speedChart" width="50" height="40"></canvas>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+                <script src="js/multi_linechart.js">
                 </script>
               </div>
             </div>
           </div>
-
-          <!-- tables and affilations-->
-
-          <!-- traffin an no. of days & Return on investment-->
-          <br><br>
-      <div class="container">
-        <div class="row">
-           <div class="col col-md-5 shadow rounded">
-                <div class="row">
-                  <div class="col shadow rounded" style="color: white; background-color: #807EFC;;">
-                    <h3>traffic</h3>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <div>
-                      <canvas id="speedChart" width="50" height="40"></canvas>
-                      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
-                      <script src="js/multi_linechart.js">
-                      </script>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-5 ml-auto shadow rounded">
-                <div class="row">
-                  <div class="col shadow rounded" style="color: white; background-color: #807EFC;;" #>
-                    <h3 class="text ">trffic by time </h3>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <canvas id="LineChart1" height="50" width="60"></canvas>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
-                    <script src="js/linechart1.js"></script>
-                  </div>
-                </div>
-              </div>
+        </div>
+        <div class="col-md-4 ml-5 mr-5" style="background-color: white;" >
+          <div class="row">
+            <div class="col shadow rounded" style="color: white; background-color: #807EFC;;" #>
+              <h3 class="text ">trffic by time </h3>
             </div>
           </div>
+          <div class="row">
+            <div class="col">
+              <canvas id="LineChart1" height="50" width="60"></canvas>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
+              <script src="js/linechart1.js"></script>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mr-2.5" style="background-color: white;">
+          <br>
+          <h3> Visitors converted</h3>
+          <br><br><br>
+          <h1 style="text-align: center;">17%</h1>
+          <br><br><br>
+          <div class="col-md-12" style="background-color: blue;">
+            <h4 style="color: white;"><span style="color: red;">&#x25BC;</span> 12% less than average</h4>
+          </div>
+        </div>
 
-          <!--Table-->
-          <br>
-          <br>
-          <div class="container">
-            <div class="row">
-              <div class="col-10  rounded">
-                <table class="table shadow">
-                  <thead>
-                     <tr>
-                         <th  scope="col"  style="color: white; background-color: #807EFC;" > Property</th>
-                         <th  scope="col" style="color: white; background-color: #807EFC;"> Value</th>
-                         
-                     </tr>       
-                  </thead>
-                  <tbody > 
-                     <tr>
-                       <th class="border-right"> SERP rank</th>  
-                       <td class="border-right"> 1000</td>
-                       
-                     </tr>
-                     <tr>
-                      <th class="border-right"> Ranking against competitor</th>  
-                      <td class="border-right"> 555</td>
-                    </tr>
-                    <tr>
-                       <th class="border-right"> new visitors</th>  
-                       <td class="border-right">32</td>
-                     </tr>
-                     <tr>
-                      <th class="border-right"> visitors converted</th>
-                       <td class="border-right"> 75% &#8593; &#8595;</td>  
-                     </tr>
-                     <tr>
-                      <th class="border-right"> worst performing pages</th>  
-                      <td class="border-right"> <a href="#">view list</a></td>
-                    </tr>
-                    <tr>
-                       <th class="border-right"> page mentions</th>  
-                       <td class="border-right"> 2323</td>
-                     </tr>
-                  </tbody>
-                 </table>
-              </div>
-            </div> 
-          </div>
-          <br><br><br><br><br>
-  
-          </div>
-      </main>
+      </div>
     </div>
-  </div>
 
-  <!--Back to the top button-->
-  <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i
-      class="fas fa-chevron-up"></i></a>
-  <style>
-    .back-to-top {
-      position: fixed;
-      bottom: 25px;
-      right: 25px;
-      display: none;
-      background-color: #C4C4C4;
-    }
-  </style>
-  <script>
-    $(document).ready(function () {
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 50) {
-          $('#back-to-top').fadeIn();
-        } else {
-          $('#back-to-top').fadeOut();
-        }
-      });
-      // scroll body to 0px on click
-      $('#back-to-top').click(function () {
-        $('body,html').animate({
-          scrollTop: 0
-        }, 400);
-        return false;
-      });
-    });
-  </script>
+  <br><br>
+
+    <div class="row " ">
+      <!-- <div class="row md-12">People from your community, using PREMIUM</div> -->
+      <div class="col-md-2 mr-2 mt-5 mb-5 ml-5 shadow" style="background-color: #ffffff;">
+          <h4 style="text-align: center;"><b>SERP Rank</b></h4><br>
+          <p style="text-align: center;"> <img src="001.jpg" alt="deleted" style="width:70px;height:60px;" ></p>
+          <!-- <p style="text-align: center; color: rgb(124, 177, 45);">10% improvement</p> -->
+          <h3 style="text-align: center;">200000</h3>
+      </div>
+      <div class="col-md-2 mr-2 mt-5 mb-5 ml-2 shadow" style="background-color: #ffffff;">
+        <h4 style="text-align: center;"><b>Ranking against your competitor</b></h4>
+        <p style="text-align: center;"> <img src="002.jpg" alt="deleted" style="width:70px;height:60px;" ></p>
+        <!-- <p style="text-align: center; color: rgb(124, 177, 45);">10% improvement</p> -->
+        <h3 style="text-align: center;">5000</h3>
+        <br><br>
+      </div>
+      <div class="col-md-2 mr-2 mt-5 mb-5 ml-2 shadow" style="background-color: #ffffff;">
+        <h4 style="text-align: center;"><b>Page mentions</b></h4><br>
+        <p style="text-align: center;"> <img src="003.jpg" alt="deleted" style="width:70px;height:60px;" ></p>
+        <!-- <p style="text-align: center; color: rgb(124, 177, 45);">10% improvement</p> -->
+        <h3 style="text-align: center;">27563</h3>
+      </div>
+      <div class="col-md-2 mr-2 mt-5 mb-5 ml-2 shadow" style="background-color: #ffffff;">
+        <h4 style="text-align: center;"><b>New visitors</b></h4><br>
+        <p style="text-align: center;"> <img src="004.jpg" alt="deleted" style="width:70px;height:60px;" ></p>
+        <!-- <p style="text-align: center; color: rgb(124, 177, 45);">10% improvement</p> -->
+        <h3 style="text-align: center;">200000</h3>
+      </div>
+
+      <div class="col-md-2.5 mr-4" style="background-color: white; width:290px;">
+        <br>
+        <h3 style="padding-left:10px"> Worst performing pages</h3><br><br><br>
+        <div class="col-md-10 ml-4 " style="background-color: blue;">
+          <h4 style="color: white;"><span style="color: red;">&#x25BC;</span> 20% less than average</h4>
+        </div>
+        <br><br>
+        <h4 style="text-align:center"><a href="worst_performing_pages.html">View List</a></h4>
+      </div>
+    </div>
+   </main>
+  </div>
+    
+  </div>
+  <!--SideNav bar close-->
+
 </body>
 
 </html>
